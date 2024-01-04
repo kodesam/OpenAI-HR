@@ -1,6 +1,6 @@
 # Resume and JD shortlistlisting with OpenAI
 
- '''High-level overview of the process of Resume and JD shortlistlisting with OpenAI'''
+ ```High-level overview of the process of Resume and JD shortlistlisting with OpenAI```
 
 # Data Collection: Collect job descriptions from various sources such as online job boards, company websites, and job aggregators. Also, collect resumes from users who want to compare their resumes to job descriptions.
 

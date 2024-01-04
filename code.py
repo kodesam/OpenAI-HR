@@ -1,34 +1,31 @@
+import streamlit as st
 import openai
 
 def compare_job_description_resume(file_job_description, file_resume):
-    openai.api_key = 'YOUR_API_KEY'  # Replace with your OpenAI API key
+    openai.api_key = ''  # Replace with your OpenAI API key
     
-    with open(file_job_description, 'r') as f:
-        job_description = f.read()
+    # Decode bytes into string assuming UTF-8 encoding
+    job_description = file_job_description.read().decode("utf-8")
+    resume = file_resume.read().decode("utf-8")
     
-    with open(file_resume, 'r') as f:
-        resume = f.read()
-    
-    documents = [job_description, resume]
-    
-    response = openai.Answer.create(
-      search_model="davinci",
-      model="davinci",
-      documents=documents,
-      question=job_description,
-      examples_context="What is the similarity score between the job description and the resume?",
-      max_responses=1,
-      stop=None,
-      log_level="info",
+    response = openai.ChatCompletion.create(
+      model="gpt-3.5-turbo",
+      messages=[
+          {"role": "system", "content": "You are a hiring manager."},
+          {"role": "user", "content": job_description},
+          {"role": "user", "content": resume},
+      ]
     )
     
-    similarity_score = response['answers'][0]['score']
+    similarity_score = response.choices[-1].message.content
     
     return similarity_score
 
-# Example usage
-file_job_description = '/path/to/job_description.txt'
-file_resume = '/path/to/resume.txt'
+# Streamlit app
+st.title("Job Description and Resume Comparison")
+file_job_description = st.file_uploader("Upload Job Description")
+file_resume = st.file_uploader("Upload Resume")
 
-score = compare_job_description_resume(file_job_description, file_resume)
-print("Similarity Score:", score)
+if file_job_description is not None and file_resume is not None:
+    score = compare_job_description_resume(file_job_description, file_resume)
+    st.write("Similarity Score:", score)

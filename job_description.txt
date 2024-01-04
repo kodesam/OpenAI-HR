@@ -1,0 +1,11 @@
+Collaborating with Dev on updates and fixes
+Implementing tools to automate testing during production
+Performing root cause analysis for errors
+Maintaining the production environment and infrastructure
+Understanding customer requirements and project KPIs
+Implementing various development, testing, automation tools, and IT infrastructure
+Planning the team structure, activities, and involvement in project management activities
+Managing stakeholders and external interfaces
+Launching product updates
+Locating production errors and issues
+Building integrations that improve users’ experience

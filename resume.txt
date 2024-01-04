@@ -1,0 +1,39 @@
+Ebony Moore
+Secaucus, NJ | 201-555-0187 | emoore@email.com
+Summary
+
+Recent graduate with a bachelor's degree in computer science and exemplary data analysis and engineering experience seeking a DevOps Enginneer position.
+Education
+
+San Diego Technical College
+Bachelor of Science in computer science
+Experience
+
+HCORP, Secaucus, NJ, DevOps Engineer
+April 2020 – Current
+Create workflows for source code management to ensure efficiency and cut down on human error
+Develop and maintained Ci/CD methodologies to speed the development process through automation
+Design and implemented disaster recovery solutions in case of breach or server crash, as well as security measures like firewalls and VPNs
+Update procedure documentation to improve training procedures and create lasting records of mastered skills for each employee to help with task delegation
+Consult with clients and confirmed system power requirements to update design documents, test results and designs
+Stanley Systems, Secaucus, NJ, Systems Engineer
+May 2017 – April 2020
+Served as team lead for two years
+Performed in-depth root cause analysis by troubleshooting network and production issues periodically
+Wrote automated Unix scripts to reduce manual labor and improve efficiency by 10%
+Routing Co., Secaucus, NJ, Systems Intern
+June 2016 – September 2016
+Assisted at all levels of the engineering process, including analysis, development, documentation, integration and testing
+Attended meetings with clients and kept a record of client requests and project parameters
+Developed processes to monitor systems and performed data collection while adhering to maintenance regulations
+Certifications
+
+Amazon Web Services (AWS) Certified DevOps Engineer
+Microsoft Certified Solutions developer
+Skills
+&nbsp;
+Organization
+Time management
+Verbal and written communication
+Attention to detail
+Systems administration
